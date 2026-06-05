@@ -1,1 +1,154 @@
+# WeakAuras 2.16.3.2 — UWOW Edition
+
+![WoW](https://img.shields.io/badge/WoW-Legion%207.3.5-orange)
+![Server](https://img.shields.io/badge/Server-UWOW.BIZ-blue)
+![Version](https://img.shields.io/badge/Version-2.16.3.1-green)
+![Author](https://img.shields.io/badge/Author-Партной_|_Спиртной-purple)
+
+[![Website](https://img.shields.io/badge/Website-UWOW.BIZ-red)](https://uwow.biz/)
+[![Discord](https://img.shields.io/badge/Discord-Community-5865F2?logo=discord\&logoColor=white)](https://discord.gg/g6n6RSfwFg)
+
+---
+
+# 1. Описание аддона
+
+WeakAuras — один из самых популярных аддонов для World of Warcraft, позволяющий создавать, импортировать и настраивать собственные уведомления, таймеры, индикаторы, иконки, панели, анимации и 3D-модели.
+
+Данная версия была специально адаптирована для сервера UWOW.BIZ и клиента Legion 7.3.5.
+
+## Изменения в версии UWOW Edition
+
+### Исправлена работа шаблонов импорта
+
+Исправлены ошибки, возникающие при импорте WeakAura-настроек, созданных для Legion.
+
+### Исправлено отображение WeakAuras
+
+Устранены проблемы отображения отдельных элементов интерфейса и пользовательских аур.
+
+### Исправлена загрузка 3D-моделей
+
+Исправлена обработка DisplayID и ModelID для корректного отображения моделей существ, боссов и игровых объектов.
+
+### Добавлены Mythic+ аффиксы
+
+Во вкладку «Загрузка» добавлены условия для основных Mythic+ аффиксов Legion.
+
+Используемые ID аффиксов:
+
+| Аффикс      | ID |
+| ----------- | -- |
+| Overflowing | 11 |
+| Skittish    | 12 |
+| Volcanic    | 13 |
+| Necrotic    | 4  |
+| Teeming     | 5  |
+| Raging      | 6  |
+| Bolstering  | 7  |
+| Sanguine    | 8  |
+| Tyrannical  | 9  |
+| Fortified   | 10 |
+| Bursting    | 14 |
+| Grievous    | 16 |
+| Explosive   | 18 |
+| Quaking     | 14 |
+
+### Оптимизация
+
+* Улучшена совместимость с UWOW Legion.
+* Уменьшено количество ошибок Lua.
+* Улучшена стабильность работы аддона.
+
+---
+
+# 2. Установка
+
+Распакуйте папку:
+
+```text
+WeakAuras
+```
+
+в каталог:
+
+```text
+World of Warcraft\Interface\AddOns\
+```
+
+После установки структура должна выглядеть следующим образом:
+
+```text
+World of Warcraft
+└── Interface
+    └── AddOns
+        └── WeakAuras
+```
+
+Перезапустите игру или выполните:
+
+```text
+/reload
+```
+
+---
+
+# 3. Где взять готовые WeakAuras
+
+Для поиска готовых настроек под ваш класс, специализацию, Mythic+, рейды и PvP рекомендуется использовать следующие ресурсы:
+
+## Legion WeakAuras
+
+https://wago.io/legion-weakauras/
+
+Специальная подборка WeakAuras для клиента Legion.
+
+## Поиск WeakAuras Legion
+
+https://wago.io/search/imports/wow/weakaura?q=legion
+
+Большая база WeakAura-импортов для Legion.
+
+### Как импортировать WA
+
+1. Скопируйте строку импорта с сайта Wago.
+2. В игре откройте:
+
+```text
+/wa
+```
+
+3. Нажмите:
+
+```text
+Импорт
+```
+
+4. Вставьте скопированную строку.
+5. Нажмите:
+
+```text
+Импортировать
+```
+
+---
+
+# Полезные ссылки
+
+Сайт сервера:
+
+https://uwow.biz/
+
+Discord сообщества:
+
+https://discord.gg/g6n6RSfwFg
+
+---
+
+# Автор
+
+Партной | Спиртной
+
+Адаптация, тестирование, исправление ошибок и поддержка версии UWOW Edition.
+
+Спасибо всем игрокам сообщества UWOW, участвующим в тестировании и развитии проекта.
 
