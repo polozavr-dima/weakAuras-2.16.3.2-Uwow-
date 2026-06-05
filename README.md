@@ -3,10 +3,7 @@
 </p>
 
 <h1 align="center">
-WeakAuras 2.16.3.2 — UWOW Edition
 </h1>
-
-![Banner](banner.png)
 
 ## Информация
 
