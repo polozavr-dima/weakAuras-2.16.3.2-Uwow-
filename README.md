@@ -1,4 +1,10 @@
-# WeakAuras 2.16.3.2 — UWOW Edition
+<p align="center">
+  <img src="banner.png" alt="WeakAuras UWOW Edition" width="100%">
+</p>
+
+<h1 align="center">
+WeakAuras 2.16.3.2 — UWOW Edition
+</h1>
 
 ![Banner](banner.png)
 
