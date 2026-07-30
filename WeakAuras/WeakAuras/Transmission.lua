@@ -35,6 +35,7 @@ local WeakAuras = WeakAuras;
 local L = WeakAuras.L;
 
 local versionString = WeakAuras.versionString;
+local versionCheckString = WeakAuras.versionCheckString or versionString;
 
 local regionOptions = WeakAuras.regionOptions;
 local regionTypes = WeakAuras.regionTypes;
@@ -1813,6 +1814,69 @@ function TransmitDisplay(id, characterName)
   end
 end
 
+local versionCheck = {}
+local function fullUnitName(unit)
+  local name, realm = UnitFullName(unit)
+  if not name then
+    return nil
+  end
+  return realm and realm ~= "" and name.."-"..realm or name
+end
+
+local function versionCheckMembers()
+  local members = {}
+  if IsInRaid() then
+    for i = 1, GetNumGroupMembers() do
+      local name = fullUnitName("raid"..i)
+      if name and not UnitIsUnit("raid"..i, "player") then
+        members[name] = true
+      end
+    end
+  elseif IsInGroup() then
+    for i = 1, GetNumSubgroupMembers() do
+      local name = fullUnitName("party"..i)
+      if name then
+        members[name] = true
+      end
+    end
+  end
+  return members
+end
+
+function WeakAuras.CheckGroupVersions()
+  local distribution = IsInRaid() and "RAID" or IsInGroup() and "PARTY"
+  if not distribution then
+    print(L["No party or raid members found for WeakAuras version check."])
+    return
+  end
+
+  versionCheck.members = versionCheckMembers()
+  versionCheck.replies = {}
+  versionCheck.active = true
+
+  Comm:SendCommMessage("WeakAuras", TableToString({m = "vR", v = versionCheckString}), distribution)
+  print(L["WeakAuras version check started. Waiting 5 seconds for replies..."])
+
+  WeakAuras.timer:ScheduleTimer(function()
+    versionCheck.active = nil
+    local same, different, missing = 0, 0, 0
+    for name in pairs(versionCheck.members) do
+      local version = versionCheck.replies[name] or versionCheck.replies[Ambiguate(name, "none")]
+      if version == versionCheckString then
+        same = same + 1
+        print(L["WeakAuras version check: %s"]:format(name.." - "..version.." ("..L["same"]..")"))
+      elseif version then
+        different = different + 1
+        print(L["WeakAuras version check: %s"]:format(name.." - "..version.." ("..L["different"]..")"))
+      else
+        missing = missing + 1
+        print(L["WeakAuras version check: %s"]:format(name.." - "..L["No reply"]))
+      end
+    end
+    print(L["WeakAuras version check finished: %d same, %d different, %d no reply."]:format(same, different, missing))
+  end, 5)
+end
+
 Comm:RegisterComm("WeakAurasProg", function(prefix, message, distribution, sender)
   if distribution == "PARTY" or distribution == "RAID" then
     local dest, msg = string.match(message, "^§§(.+):(.+)$")
@@ -1886,6 +1950,12 @@ Comm:RegisterComm("WeakAuras", function(prefix, message, distribution, sender)
           {1, "WeakAuras", 0.5333, 0, 1},
           {1, L["Requested display not authorized"], 1, 0, 0}
         });
+      end
+    elseif(received.m == "vR") then
+      crossRealmSendCommMessage("WeakAuras", TableToString({m = "v", v = versionCheckString}), sender)
+    elseif(received.m == "v") then
+      if versionCheck.active then
+        versionCheck.replies[sender] = received.v or L["No reply"]
       end
     end
   elseif(ItemRefTooltip.WeakAuras_Tooltip_Thumbnail and ItemRefTooltip.WeakAuras_Tooltip_Thumbnail:IsVisible()) then

@@ -42,7 +42,7 @@ local L = WeakAuras.L
 	--[[Translation missing --]]
 	L["|cFFffcc00Anchors:|r Anchored to frame's |cFFFF0000%s|r with offset |cFFFF0000%s/%s|r"] = "|cFFffcc00Anchors:|r Anchored to frame's |cFFFF0000%s|r with offset |cFFFF0000%s/%s|r"
 	--[[Translation missing --]]
-	L["|cFFffcc00Extra Options:|r"] = "|cFFffcc00Extra Options:|r"
+	L["|cFFffcc00Extra Options:|r"] = "|cFFffcc00Дополнительные параметры:|r"
 	--[[Translation missing --]]
 	L["|cFFffcc00Font Flags:|r |cFFFF0000%s|r and shadow |c%sColor|r with offset |cFFFF0000%s/%s|r%s%s"] = "|cFFffcc00Font Flags:|r |cFFFF0000%s|r and shadow |c%sColor|r with offset |cFFFF0000%s/%s|r%s%s"
 	L["1 Match"] = "1 cовпадение"
@@ -171,7 +171,7 @@ local L = WeakAuras.L
 	L["Collapse all loaded displays"] = "Свернуть все загруженные индикации"
 	L["Collapse all non-loaded displays"] = "Свернуть все не загруженные индикации"
 	--[[Translation missing --]]
-	L["Collapsible Group"] = "Collapsible Group"
+	L["Collapsible Group"] = "Сворачиваемая группа"
 	L["color"] = "цвет"
 	L["Color"] = "Цвет"
 	L["Column Height"] = "Высота столбца"
@@ -249,7 +249,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Display"] = "Отображение"
 	L["Display Icon"] = "Отображать иконку"
 	--[[Translation missing --]]
-	L["Display Name"] = "Display Name"
+	L["Display Name"] = "Название индикации"
 	L["Display Text"] = "Отображать текст"
 	L["Displays a text, works best in combination with other displays"] = "Отображает текст, лучше всего работает в сочетании с другими индикациями"
 	L["Distribute Horizontally"] = "Распределить по горизонтали"
@@ -257,7 +257,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Do not group this display"] = "Не группировать эту индикацию"
 	L["Done"] = "Выполнено"
 	--[[Translation missing --]]
-	L["Don't skip this Version"] = "Don't skip this Version"
+	L["Don't skip this Version"] = "Не пропускать эту версию"
 	L["Down"] = "Переместить вниз"
 	L["Drag to move"] = "Перетащите для перемещения"
 	L["Duplicate"] = "Дублировать"
@@ -267,7 +267,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Dynamic Duration"] = "Динамическое значение"
 	L["Dynamic Group"] = "Динамическая группа"
 	--[[Translation missing --]]
-	L["Dynamic Group Settings"] = "Dynamic Group Settings"
+	L["Dynamic Group Settings"] = "Настройки динамической группы"
 	L["Dynamic Information"] = "Динамическая информация"
 	L["Dynamic information from first active trigger"] = "Динамическая информация из первого активного триггера"
 	L["Dynamic information from Trigger %i"] = "Динамическая информация из Триггера %i"
@@ -336,7 +336,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Frequency"] = "Frequency"
 	L["From Template"] = "Из шаблона"
 	--[[Translation missing --]]
-	L["From version "] = "From version "
+	L["From version "] = "С версии "
 	L["Global Conditions"] = "Универсальные условия"
 	--[[Translation missing --]]
 	L["Glow %s"] = "Glow %s"
@@ -362,20 +362,20 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 |cFF00CC00> 1/2|r - сработает, если больше половины группы по воздействием эффекта (5 из 5, 6 из 10 человек)
 |cFF00CC00>= 0|r - всегда срабатывает, несмотря ни на что]=]
 	--[[Translation missing --]]
-	L["Group by Frame"] = "Group by Frame"
+	L["Group by Frame"] = "Группировать по фрейму"
 	--[[Translation missing --]]
-	L["Group contains updates from Wago"] = "Group contains updates from Wago"
+	L["Group contains updates from Wago"] = "Группа содержит обновления с Wago"
 	--[[Translation missing --]]
-	L["Group Icon"] = "Group Icon"
+	L["Group Icon"] = "Иконка группы"
 	--[[Translation missing --]]
-	L["Group key"] = "Group key"
+	L["Group key"] = "Ключ группы"
 	L["Group Member Count"] = "Кол-во участников"
 	L["Group Role"] = "Роль в группе"
 	L["Group Scale"] = "Масштаб группы"
 	--[[Translation missing --]]
-	L["Group Settings"] = "Group Settings"
+	L["Group Settings"] = "Настройки группы"
 	--[[Translation missing --]]
-	L["Group Type"] = "Group Type"
+	L["Group Type"] = "Тип группы"
 	L["Grow"] = "Направление роста"
 	L["Hawk"] = "Ястреб"
 	L["Height"] = "Высота"
@@ -385,7 +385,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	--[[Translation missing --]]
 	L["Hide Cooldown Text"] = "Hide Cooldown Text"
 	--[[Translation missing --]]
-	L["Hide Extra Options"] = "Hide Extra Options"
+	L["Hide Extra Options"] = "Скрыть дополнительные параметры"
 	L["Hide on"] = "Скрыть на"
 	L["Hide this group's children"] = "Скрыть индикации этой группы"
 	L["Hide When Not In Group"] = "Скрыть когда не в группе"
@@ -418,7 +418,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	--[[Translation missing --]]
 	L["If unchecked, then this space will fill the entire line it is on in User Mode."] = "If unchecked, then this space will fill the entire line it is on in User Mode."
 	--[[Translation missing --]]
-	L["Ignore all Updates"] = "Ignore all Updates"
+	L["Ignore all Updates"] = "Игнорировать все обновления"
 	--[[Translation missing --]]
 	L["Ignore Self"] = "Ignore Self"
 	L["Ignore self"] = "Исключить себя из числа участников"
@@ -444,7 +444,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Left 2 HUD position"] = "Позиция 2-го левого HUD"
 	L["Left HUD position"] = "Позиция левого HUD"
 	--[[Translation missing --]]
-	L["Legacy Aura Trigger"] = "Legacy Aura Trigger"
+	L["Legacy Aura Trigger"] = "Устаревший триггер ауры"
 	--[[Translation missing --]]
 	L["Length"] = "Length"
 	--[[Translation missing --]]
@@ -479,16 +479,16 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	--[[Translation missing --]]
 	L["Model Settings"] = "Model Settings"
 	--[[Translation missing --]]
-	L["Move Above Group"] = "Move Above Group"
+	L["Move Above Group"] = "Переместить над группой"
 	--[[Translation missing --]]
-	L["Move Below Group"] = "Move Below Group"
+	L["Move Below Group"] = "Переместить под группу"
 	L["Move Down"] = "Переместить вниз"
 	--[[Translation missing --]]
 	L["Move Entry Up"] = "Move Entry Up"
 	--[[Translation missing --]]
-	L["Move Into Above Group"] = "Move Into Above Group"
+	L["Move Into Above Group"] = "Переместить в группу выше"
 	--[[Translation missing --]]
-	L["Move Into Below Group"] = "Move Into Below Group"
+	L["Move Into Below Group"] = "Переместить в группу ниже"
 	L["Move this display down in its group's order"] = "Переместить индикацию вниз в порядке элементов группы"
 	L["Move this display up in its group's order"] = "Переместить индикацию вверх в порядке элементов группы"
 	L["Move Up"] = "Переместить вверх"
@@ -513,9 +513,9 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Negator"] = "Не"
 	L["Never"] = "Никогда"
 	--[[Translation missing --]]
-	L["New Aura"] = "New Aura"
+	L["New Aura"] = "Новая аура"
 	--[[Translation missing --]]
-	L["New Value"] = "New Value"
+	L["New Value"] = "Новое значение"
 	L["No"] = "Нет"
 	L["No Children"] = "Нет индикаций"
 	L["No tooltip text"] = "Без подсказки"
@@ -560,7 +560,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Paste Action Settings"] = "Вставить настройки действий"
 	L["Paste Animations Settings"] = "Вставить настройки анимации"
 	--[[Translation missing --]]
-	L["Paste Author Options Settings"] = "Paste Author Options Settings"
+	L["Paste Author Options Settings"] = "Вставить настройки автора"
 	L["Paste Condition Settings"] = "Вставить настройки условий"
 	--[[Translation missing --]]
 	L["Paste Custom Configuration"] = "Paste Custom Configuration"
@@ -649,7 +649,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	--[[Translation missing --]]
 	L["Show Cooldown"] = "Show Cooldown"
 	--[[Translation missing --]]
-	L["Show Extra Options"] = "Show Extra Options"
+	L["Show Extra Options"] = "Показать дополнительные параметры"
 	--[[Translation missing --]]
 	L["Show Glow"] = "Show Glow"
 	--[[Translation missing --]]
@@ -685,7 +685,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Simple"] = "Простой способ"
 	L["Size"] = "Размер"
 	--[[Translation missing --]]
-	L["Skip this Version"] = "Skip this Version"
+	L["Skip this Version"] = "Пропустить эту версию"
 	L["Slant Amount"] = "Уровень наклона"
 	L["Slant Mode"] = "Режим наклона"
 	L["Slanted"] = "Наклонная текстура"
@@ -728,7 +728,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	--[[Translation missing --]]
 	L["Step Size"] = "Step Size"
 	--[[Translation missing --]]
-	L["Stop ignoring Updates"] = "Stop ignoring Updates"
+	L["Stop ignoring Updates"] = "Перестать игнорировать обновления"
 	L["Stop Sound"] = "Остановить звук"
 	--[[Translation missing --]]
 	L["Sub Elements"] = "Sub Elements"

@@ -90,6 +90,7 @@ function WeakAuras.PrintHelp()
   print(L["/wa pstop - Finish profiling"])
   print(L["/wa pprint - Show the results from the most recent profiling"])
   print(L["/wa repair - Repair tool"])
+  print(L["/wa versioncheck - Check WeakAuras versions in your group"])
   print(L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/wa2!"])
 end
 
@@ -112,6 +113,8 @@ function SlashCmdList.WEAKAURAS(msg)
     WeakAuras.PrintHelp();
   elseif msg == "repair" then
     StaticPopup_Show("WEAKAURAS_CONFIRM_REPAIR", nil, nil, {reason = "user"})
+  elseif msg == "versioncheck" then
+    WeakAuras.CheckGroupVersions();
   else
     WeakAuras.OpenOptions(msg);
   end
