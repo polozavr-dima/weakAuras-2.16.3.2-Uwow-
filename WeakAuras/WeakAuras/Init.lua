@@ -24,6 +24,7 @@ intendedWoWProject = WOW_PROJECT_CLASSIC
 --@end-non-retail@]===]
 
 WeakAuras.versionString = versionStringFromToc
+WeakAuras.versionCheckString = versionString .. "-Uwow-maby"
 WeakAuras.buildTime = buildTime
 WeakAuras.printPrefix = "|cff9900ffWeakAuras:|r "
 WeakAuras.newFeatureString = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0|t"
